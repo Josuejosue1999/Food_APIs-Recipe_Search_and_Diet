@@ -12,17 +12,18 @@ async function fetchRecipes() {
         return;
     }
 
-    const apiKey = 'b95f297a2bmsh58d3dc30700f7cap1fd361jsn92eed1df6689'
-    const apiUrl = `https://edamam-recipe-search.p.rapidapi.com/search?q=${query}`;
-
-    const headers = {
-        'X-RapidAPI-Key': apiKey,
-        'X-RapidAPI-Host': 'edamam-recipe-search.p.rapidapi.com'
+    const url = `https://edamam-recipe-search.p.rapidapi.com/search?q=${query}`;
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'b95f297a2bmsh58d3dc30700f7cap1fd361jsn92eed1df6689',
+            'X-RapidAPI-Host': 'edamam-recipe-search.p.rapidapi.com'
+        }
     };
 
     try {
-        const response = await axios.get(apiUrl, { headers });
-        const data = response.data;
+        const response = await fetch(url, options);
+        const data = await response.json();
 
         if (data.hits.length === 0) {
             recipesList.innerHTML = "<p>No recipes found.</p>";
