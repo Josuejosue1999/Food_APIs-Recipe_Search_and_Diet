@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;    
+    background-image: url("https://www.darefoods.com/wp-content/uploads/2021/09/Corp-Recipes-scaled-2-1024x640.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace; 
+    text-decoration: underline;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    margin: 100;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav a {
+    text-decoration: underline;
+    color: rgb(19, 18, 18);
+    font-size: 20px
+}
+
