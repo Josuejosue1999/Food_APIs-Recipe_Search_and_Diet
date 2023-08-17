@@ -24,7 +24,6 @@ async function fetchRecipes() {
     try {
         const response = await fetch(url, options);
         const data = await response.json();
-
         if (data.hits.length === 0) {
             recipesList.innerHTML = "<p>No recipes found.</p>";
         } else {
