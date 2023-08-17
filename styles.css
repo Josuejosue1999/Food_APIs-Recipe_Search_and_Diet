@@ -11,6 +11,10 @@ body {
 
 }
 
+h2 {
+    font-family: 'Courier New', Courier, monospace; 
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -27,13 +31,13 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center; /* Center menu items horizontally */
+    justify-content: center; 
     margin: 100;
     padding: 0;
 }
 
 nav li {
-    margin: 0 15px; /* Add space between menu items */
+    margin: 0 15px; 
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -86,4 +90,6 @@ button:hover {
 
 #recipesList {
     margin-top: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
