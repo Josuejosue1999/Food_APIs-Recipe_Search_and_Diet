@@ -11,8 +11,9 @@ body {
 
 }
 
-h2 {
+h1 {
     font-family: 'Courier New', Courier, monospace; 
+    text-decoration: underline;
 }
 
 body, html {
@@ -126,7 +127,7 @@ button:hover {
     font-size: 24px;
     margin-bottom: 10px;
     font-family: 'Courier New', Courier, monospace;
-    text-decoration: underline;
+
 }
 
 .about-content p {
@@ -135,4 +136,13 @@ button:hover {
     max-width: 600px;
     margin: 0 auto;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.read-more {
+    margin-top: 10px; 
+}
+
+.read-more a {
+    color: rgb(251, 251, 253);
+    text-decoration: underline;
 }
